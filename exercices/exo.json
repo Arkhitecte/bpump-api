@@ -1,0 +1,17 @@
+{
+  "pullup": {
+    "sugar": {
+      "title": "Traction"
+    },
+    "left": {
+      "angle": "angleLeftArm",
+      "minAngle": 150,
+      "maxAngle": 48
+    },
+    "right": {
+      "angle": "angleRightArm",
+      "minAngle": 150,
+      "maxAngle": 48
+    }
+  }
+}
