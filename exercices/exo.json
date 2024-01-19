@@ -1,17 +1,270 @@
 {
-  "pullup": {
-    "sugar": {
-      "title": "Traction"
+    "pushup": {
+        "sugar": {
+            "title": "Pompes",
+            "description": "Les pompes sont un exercice de musculation qui sollicite principalement les muscles du haut du corps, notamment les pectoraux, les épaules et les triceps. Commencez en position de planche, abaissez votre corps vers le sol en pliant les coudes, puis poussez-vous vers le haut.",
+            "category": "Haut du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 400, "y": 150 },
+            { "x": 400, "y": -150 },
+            { "x": -400, "y": 75 },
+            { "x": -400, "y": -75 }
+        ]
     },
-    "left": {
-      "angle": "angleLeftArm",
-      "minAngle": 150,
-      "maxAngle": 48
+    "squat": {
+        "sugar": {
+            "title": "Squats",
+            "description": "Les squats sont un exercice polyarticulaire qui cible les muscles des jambes, des fesses et du bas du dos. Tenez-vous debout, fléchissez vos genoux et vos hanches pour descendre en position accroupie, puis remontez.",
+            "category": "Bas du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
     },
-    "right": {
-      "angle": "angleRightArm",
-      "minAngle": 150,
-      "maxAngle": 48
+    "pullup": {
+        "sugar": {
+            "title": "Tractions",
+            "description": "Les tractions sont un exercice efficace pour renforcer les muscles du dos, des épaules et des bras. Accrochez-vous à une barre fixe, tendez vos bras et tirez votre corps vers le haut en utilisant la force de vos muscles du dos et de vos bras.",
+            "category": "Haut du corps",
+            "difficulty": 4
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "chinup": {
+        "sugar": {
+            "title": "Chin ups",
+            "description": "Les chin ups sont similaires aux tractions, mais avec une prise de supination (paumes tournées vers vous). Cet exercice met davantage l'accent sur les muscles biceps. Effectuez une flexion des bras en tirant votre menton au-dessus de la barre.",
+            "category": "Haut du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "jumpingjack": {
+        "sugar": {
+            "title": "Jumping jacks",
+            "description": "Les jumping jacks sont un exercice cardiovasculaire qui engage tout le corps. Commencez en position debout, puis sautez en écartant les pieds sur le côté tout en levant les bras au-dessus de la tête. Revenez à la position de départ et répétez.",
+            "category": "Cardio",
+            "difficulty": 2
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "deadlift": {
+        "sugar": {
+            "title": "Deadlifts",
+            "description": "Le deadlift (soulevé de terre) est un exercice de base qui cible les muscles du dos, des fesses, des ischio-jambiers et des lombaires. En partant d'une position debout, baissez-vous en gardant le dos droit pour saisir une barre, puis redressez-vous en soulevant la charge.",
+            "category": "Bas du corps",
+            "difficulty": 4
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "planch": {
+        "sugar": {
+            "title": "Planche",
+            "description": "La planche est un exercice de gainage qui renforce les muscles de la ceinture abdominale, du dos et des épaules. Maintenez une position de planche en appui sur les avant-bras et les orteils, en veillant à maintenir le corps en ligne droite.",
+            "category": "Core",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "burpees": {
+        "sugar": {
+            "title": "Burpees",
+            "description": "Les burpees sont un exercice complet qui combine des mouvements de flexion, d'extension, de saut et de pompe. Commencez en position debout, effectuez une flexion, une pompe, un saut, puis répétez. Cet exercice est idéal pour le renforcement cardiovasculaire.",
+            "category": "Cardio",
+            "difficulty": 4
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 400, "y": 150 },
+            { "x": 400, "y": -150 },
+            { "x": -400, "y": 75 },
+            { "x": -400, "y": -75 }
+        ]
+    },
+    "lunges": {
+        "sugar": {
+            "title": "Fentes",
+            "description": "Les fentes sont un exercice qui cible les muscles des jambes et des fesses. Faites un pas en avant avec une jambe, pliez les deux genoux pour descendre en position accroupie, puis revenez à la position de départ et répétez de l'autre côté.",
+            "category": "Bas du corps",
+            "difficulty": 2
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "dips": {
+        "sugar": {
+            "title": "Dips",
+            "description": "Les dips sont un exercice de musculation pour les triceps et les muscles de la poitrine. Utilisez des barres parallèles, abaissez votre corps en pliant les coudes, puis remontez en utilisant la force de vos bras.",
+            "category": "Haut du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    },
+    "lsit": {
+        "sugar": {
+            "title": "L-Sit",
+            "description": "L-Lit est un exercice de calisthénie qui cible les muscles du tronc, des hanches et des épaules. Asseyez-vous au sol, placez vos mains à côté des hanches, soulevez vos jambes en maintenant une position assise. Maintenez la position aussi longtemps que possible.",
+            "category": "Calisthénie",
+            "difficulty": 4
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
     }
-  }
 }

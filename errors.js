@@ -1,4 +1,4 @@
 class LoginFileError extends Error {
-    name = 'UsernameLookupError'
-    message = 'This username does not appear in the database'
+    name = "UsernameLookupError"
+    message = "Ce nom d'utilisateur n'apparaît pas dans la base de données"
 }

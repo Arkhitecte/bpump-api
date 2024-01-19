@@ -1,16 +1,16 @@
 {
-    "username" : "admin",
-    "password" : "1234",
-    "permissions" : {
-        "admin" : true,
-        "edit" : true,
-        "delete" : true,
-        "post" : true,
-        "ban" : true
+    "username": "admin",
+    "password": "1234",
+    "permissions": {
+        "admin": true,
+        "edit": true,
+        "delete": true,
+        "post": true,
+        "ban": true
     },
-    "data" : {
-        "height" : 170,
-        "weight" : 68,
-        "sex" : "M"
+    "data": {
+        "height": 170,
+        "weight": 68,
+        "sex": "M"
     }
 }
