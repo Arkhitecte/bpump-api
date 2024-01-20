@@ -44,14 +44,22 @@ app.post('/logintest', (req, res) => {
         if (!req.query.password) {res.status(400).send("Missing password"); return}
         authAgent(req.query.username, req.query.password).then(result => {
             switch (result.success){
-                case 1 : res.status(403).send("Wrong Password")
-                case 2 : res.status(404).send("User not found")
-                case 3 : res.status(500).send("Internal Servor Error")
-                case 0 : break
-                default : res.status(500).send("Internal Server Error")
+                case 1:
+                    res.status(403).send("Wrong Password")
+                    break
+                case 2:
+                    res.status(404).send("User not found")
+                    break
+                case 3:
+                    res.status(500).send("User not found")
+                    break
+                case 0:
+                    res.send(result.data)
+                    break
+                default:
+                    res.status(500).send("Internal Server Error")
+                    break
             }
-            user = result
-            res.send(user.data)
         })
     } catch (error) {
         console.error(error);
