@@ -1,0 +1,28 @@
+{
+    "pushup": {
+        "sugar": {
+            "title": "Pompes",
+            "description": "Les pompes sont un exercice de musculation qui sollicite principalement les muscles du haut du corps, notamment les pectoraux, les épaules et les triceps. Commencez en position de planche, abaissez votre corps vers le sol en pliant les coudes, puis poussez-vous vers le haut.",
+            "category": "Haut du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 400, "y": 150 },
+            { "x": 400, "y": -150 },
+            { "x": -400, "y": 75 },
+            { "x": -400, "y": -75 }
+        ]
+    }
+}

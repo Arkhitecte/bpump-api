@@ -1,0 +1,26 @@
+{
+    "jumpingjack": {
+        "sugar": {
+            "title": "Jumping jacks",
+            "description": "Les jumping jacks sont un exercice cardiovasculaire qui engage tout le corps. Commencez en position debout, puis sautez en écartant les pieds sur le côté tout en levant les bras au-dessus de la tête. Revenez à la position de départ et répétez.",
+            "category": "Cardio",
+            "difficulty": 2
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    }
+}

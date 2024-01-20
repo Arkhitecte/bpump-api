@@ -1,0 +1,26 @@
+{
+    "chinup": {
+        "sugar": {
+            "title": "Chin ups",
+            "description": "Les chin ups sont similaires aux tractions, mais avec une prise de supination (paumes tournées vers vous). Cet exercice met davantage l'accent sur les muscles biceps. Effectuez une flexion des bras en tirant votre menton au-dessus de la barre.",
+            "category": "Haut du corps",
+            "difficulty": 3
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    }
+}

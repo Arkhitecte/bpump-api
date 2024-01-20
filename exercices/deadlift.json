@@ -1,0 +1,26 @@
+{
+    "deadlift": {
+        "sugar": {
+            "title": "Deadlifts",
+            "description": "Le deadlift (soulevé de terre) est un exercice de base qui cible les muscles du dos, des fesses, des ischio-jambiers et des lombaires. En partant d'une position debout, baissez-vous en gardant le dos droit pour saisir une barre, puis redressez-vous en soulevant la charge.",
+            "category": "Bas du corps",
+            "difficulty": 4
+        },
+        "cam": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "proj": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    }
+}
