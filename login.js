@@ -6,12 +6,12 @@ function loginFetch(username, password) {
     const userPath = path.join(__dirname, "users", `${username}.json`)
     return new Promise((resolve, reject) => {
         if (!userPath.startsWith(path.join(__dirname, "users"))) {
-            reject("Utilisateur non trouvé")
+            reject("User not found")
             return { success: 2 }
         }
         fs.readFile(userPath, "utf8", (err, data) => {
             if (err) {
-                reject("Non trouvé")
+                reject("Not found")
                 return { success: 2 }
             } else {
                 resolve(loginCheck(JSON.parse(data), password))
