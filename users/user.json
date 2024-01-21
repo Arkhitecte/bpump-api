@@ -1,0 +1,16 @@
+{
+    "username": "user",
+    "password": "0000",
+    "permissions": {
+        "admin": false,
+        "edit": false,
+        "delete": false,
+        "post": true,
+        "ban": false
+    },
+    "data": {
+        "height": 165,
+        "weight": 55,
+        "sex": "M"
+    }
+}

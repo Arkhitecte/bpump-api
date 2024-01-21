@@ -52,8 +52,6 @@ app.post('/logintest', (req, res) => {
                 case 0 : break
                 default : {res.status(500).send("Internal Server Error");return}
             }
-            user = result
-            res.send(user.data)
         })
     } catch (error) {
         console.error(error);
