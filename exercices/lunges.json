@@ -1,0 +1,26 @@
+{
+    "lunges": {
+        "sugar": {
+            "title": "Fentes",
+            "description": "Les fentes sont un exercice qui cible les muscles des jambes et des fesses. Faites un pas en avant avec une jambe, pliez les deux genoux pour descendre en position accroupie, puis revenez à la position de départ et répétez de l'autre côté.",
+            "category": "Bas du corps",
+            "difficulty": 2
+        },
+        "cameraTargets": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "projectorTargets": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    }
+}

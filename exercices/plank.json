@@ -1,0 +1,26 @@
+{
+    "plank": {
+        "sugar": {
+            "title": "Planche",
+            "description": "La planche est un exercice de gainage qui renforce les muscles de la ceinture abdominale, du dos et des épaules. Maintenez une position de planche en appui sur les avant-bras et les orteils, en veillant à maintenir le corps en ligne droite.",
+            "category": "Core",
+            "difficulty": 3
+        },
+        "cameraTargets": {
+            "left": {
+                "angle": "angleLeftArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            },
+            "right": {
+                "angle": "angleRightArm",
+                "minAngle": 150,
+                "maxAngle": 48
+            }
+        },
+        "projectorTargets": [
+            { "x": 100, "y": 0 },
+            { "x": -100, "y": 0 }
+        ]
+    }
+}
