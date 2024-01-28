@@ -1,14 +1,12 @@
 const express = require("express");
 const morgan = require('morgan');
-const app = express()
 const fs = require('fs-extra');
 const path = require('path');
 
 const { fetchFiles } = require('./fetchFiles')
 const { authAgent } = require('./login.js')
 
-
-
+const app = express()
 app.use(express.json());
 app.use(morgan('dev'));
 app.use("exercices", express.static('exercices'))
@@ -123,5 +121,65 @@ app.post("/addExercice", (req, res) => {
         })
     } catch (error) {
         res.status(500).send("Internal Server Error");
+    }
+})
+
+app.get("/fetch/exos", (req, res) => {
+    res.send(fetchFiles("./exercices"))
+})
+
+app.post("/addUser", (req, res) => {
+    try {
+        console.log(req.body)
+        if (!req.body) {res.status(400).send("Missing arguments"); return}
+        if (!req.body.username) {res.status(400).send("Missing username"); return}
+        if (!req.body.password) {res.status(400).send("Missing password"); return}
+        authAgent(req.body.username, req.body.password).then(result => {
+            switch (result.success){
+                case 1 : {res.status(403).send("Wrong Password");return;break;}
+                case 2 : {res.status(404).send("User not found");return;break;}
+                case 3 : {res.status(500).send("Internal Servor Error");return;break;}
+                case 0 : break
+                default : {res.status(500).send("Internal Server Error");return;break;}
+            } 
+            try {
+                if(!result.permissions.admin) {res.status(403).send("Action not authorized"); return}
+                if (fs.existsSync(path.join(__dirname, 'users', `${req.body.newusername}.json`))) {
+                    res.status(400).send("User already exists");
+                    return
+                    console.log("hi?")
+                }
+                r = req.body
+                newUser = {
+                    
+                        "username": r.newusername,
+                        "password": r.newuserpassword,
+                        "permissions": {
+                            "admin": false,
+                            "edit": false,
+                            "delete": false,
+                            "post": false,
+                            "ban": false
+                        },
+                        "data": {
+                            "height": parseInt(r.height),
+                            "weight": parseInt(r.weight),
+                            "sex": r.sex
+                        }
+                    }
+                newUser = JSON.stringify(newUser, null, 4);
+                fs.writeFile(path.join(__dirname, 'users', `${r.newusername}.json`), newUser, function(err) {
+                    if(err) {res.status(500).send(err);return}
+                    res.status(200).send(newUser);
+                    return
+                })
+
+            } catch (err) {
+                console.error(err)
+                res.status(500).send("Internal Server Error")
+            }
+        })
+    } catch (err) {
+        res.status(500).send("Internal Server Error")
     }
 })
