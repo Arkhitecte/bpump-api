@@ -1,17 +1,17 @@
 {
-    "username": "user",
-    "password": "0000",
+    "username": "app-account",
+    "password": "0",
     "permissions": {
         "admin": false,
         "edit": false,
         "delete": false,
         "post": true,
         "ban": false,
-        "addUser" : false
+        "addUser" : true
     },
     "data": {
-        "height": 165,
-        "weight": 55,
+        "height": 1,
+        "weight": 1,
         "sex": "M"
     }
 }

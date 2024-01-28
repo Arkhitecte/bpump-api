@@ -1,5 +1,9 @@
 const fs = require('fs-extra')
 
+/**
+   * Returns the name of every file in a folder
+   * @param  {String} path  The path in which files will be searched
+   */
 module.exports.fetchFiles = function(path) {
     let files = []
     fs.readdirSync(path).forEach(file => {
@@ -7,3 +11,4 @@ module.exports.fetchFiles = function(path) {
     });
     return files
 }
+

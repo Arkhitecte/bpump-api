@@ -6,7 +6,8 @@
         "edit": false,
         "delete": false,
         "post": false,
-        "ban": false
+        "ban": false,
+        "addUser" : true
     },
     "data": {
         "height": 191,
