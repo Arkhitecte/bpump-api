@@ -4,7 +4,16 @@
             "title": "Squats",
             "description": "Les squats sont un exercice polyarticulaire qui cible les muscles des jambes, des fesses et du bas du dos. Tenez-vous debout, fléchissez vos genoux et vos hanches pour descendre en position accroupie, puis remontez.",
             "category": "Bas du corps",
-            "difficulty": 3
+            "difficulty": 3,
+            "muscles": ["Quadriceps", "Ischio-jambiers", "Fessiers", "Bas du dos"],
+            "security": [
+                "Gardez le dos droit pendant l'exercice.",
+                "Assurez-vous que vos genoux suivent la direction de vos pieds pour éviter tout stress excessif."
+            ],
+            "needed": ["Aucun équipement requis"],
+            "energetic": {
+                "calories": 12
+            }
         },
         "cameraTargets": {
             "left": {

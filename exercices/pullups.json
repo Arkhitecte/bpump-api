@@ -4,7 +4,16 @@
             "title": "Tractions",
             "description": "Les tractions sont un exercice efficace pour renforcer les muscles du dos, des épaules et des bras. Accrochez-vous à une barre fixe, tendez vos bras et tirez votre corps vers le haut en utilisant la force de vos muscles du dos et de vos bras.",
             "category": "Haut du corps",
-            "difficulty": 4
+            "difficulty": 4,
+            "muscles": ["Dos", "Épaules", "Bras"],
+            "security": [
+                "Maintenez une bonne forme avec les épaules en arrière.",
+                "Évitez de balancer votre corps pour faciliter le mouvement."
+            ],
+            "needed": ["Barre fixe"],
+            "energetic": {
+                "calories": 15
+            }
         },
         "cameraTargets": {
             "left": {

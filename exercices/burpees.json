@@ -4,7 +4,16 @@
             "title": "Burpees",
             "description": "Les burpees sont un exercice complet qui combine des mouvements de flexion, d'extension, de saut et de pompe. Commencez en position debout, effectuez une flexion, une pompe, un saut, puis répétez. Cet exercice est idéal pour le renforcement cardiovasculaire.",
             "category": "Cardio",
-            "difficulty": 4
+            "difficulty": 4,
+            "muscles": ["Quadriceps", "Pectoraux", "Deltoids", "Abdominaux"],
+            "security": [
+                "Assurez-vous de maintenir une bonne forme tout au long de l'exercice.",
+                "Évitez de bloquer vos genoux lors de la phase de saut."
+            ],
+            "needed": ["Aucun équipement requis"],
+            "energetic": {
+                "calories": 15
+            }
         },
         "cameraTargets": {
             "left": {

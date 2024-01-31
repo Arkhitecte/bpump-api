@@ -4,7 +4,16 @@
             "title": "Dips",
             "description": "Les dips sont un exercice de musculation pour les triceps et les muscles de la poitrine. Utilisez des barres parallèles, abaissez votre corps en pliant les coudes, puis remontez en utilisant la force de vos bras.",
             "category": "Haut du corps",
-            "difficulty": 3
+            "difficulty": 3,
+            "muscles": ["Triceps", "Pectoraux"],
+            "security": [
+                "Assurez-vous de maintenir une bonne forme tout au long de l'exercice.",
+                "Évitez de verrouiller complètement vos coudes en haut du mouvement."
+            ],
+            "needed": ["Barres parallèles"],
+            "energetic": {
+                "calories": 8
+            }
         },
         "cameraTargets": {
             "left": {

@@ -4,7 +4,16 @@
             "title": "L-Sit",
             "description": "Le L-Sit est un exercice de calisthénie qui cible les muscles du tronc, des hanches et des épaules. Asseyez-vous au sol, placez vos mains à côté des hanches, soulevez vos jambes en maintenant une position assise. Maintenez la position aussi longtemps que possible.",
             "category": "Calisthénie",
-            "difficulty": 4
+            "difficulty": 4,
+            "muscles": ["Tronc", "Hanches", "Épaules"],
+            "security": [
+                "Gardez les épaules en arrière et le dos droit pour éviter tout stress inutile.",
+                "Si vous êtes débutant, commencez avec des versions plus simples de l'exercice."
+            ],
+            "needed": ["Surface plane"],
+            "energetic": {
+                "calories": 7
+            }
         },
         "cameraTargets": {
             "left": {
